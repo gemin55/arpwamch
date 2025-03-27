@@ -69,9 +69,12 @@
       <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col text-center">
 
-  <h3 style="color:white;font-style:oblique;">AR Demo Version 2 - 3D Model image Instead of a Box</h3>
-        <!-- A-Frame Scene with AR.js -->
-    <a-scene embedded arjs>
+  <h3 style="color:white;font-style:oblique;">AR Demo Version 3</h3>
+  <p> Enable Markerless AR </p>
+  <p>(Surface Tracking)</p>
+  <!-- By default, we used marker-based AR, but you can switch to markerless AR (surface tracking).
+  Replace this line in <a-scene>: -->
+        <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
       <!-- Instead of a simple box, let’s load a 3D GLTF model.
 Replace the <a-box> tag with: -->
       <a-entity 
@@ -83,7 +86,6 @@ Replace the <a-box> tag with: -->
       <!-- AR Camera -->
       <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
-  
 
         </div>
       </div>
